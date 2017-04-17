@@ -1,5 +1,11 @@
 #! /usr/bin/env python3
 
+# Leslie Huang
+# Network Analysis 2017
+# Utility to generate a CSV of followee-follower links (i.e. network edges) from a directory of JSON files where each file is one user's record
+# For instructions how to use and the latest version, go to:
+# https://github.com/leslie-huang/twitter-ssscraper
+
 import argparse
 import csv
 import json

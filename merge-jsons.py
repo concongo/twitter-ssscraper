@@ -1,5 +1,11 @@
 #! /usr/bin/env python3
 
+# Leslie Huang
+# Network Analysis 2017
+# Utility to merge individual JSON files for Twitter users into a single file
+# For instructions how to use and the latest version, go to:
+# https://github.com/leslie-huang/twitter-ssscraper
+
 import argparse
 import csv
 import json
