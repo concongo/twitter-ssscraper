@@ -41,8 +41,7 @@ def get_user_record(screen_name, depth, folder):
         "screen_name": user_profile.screen_name,
         "user_id": user_profile.id,
         "num_followers": user_profile.followers_count,
-        "followers_ids": get_followers_ids(screen_name),
-        "following_ids": api.friends_ids(screen_name)
+        "followers_ids": get_followers_ids(screen_name)
         }
     
     # Write user record to JSON
@@ -73,7 +72,10 @@ if __name__ == "__main__":
     print("Scraping followers of {}...".format(screen_name))
     
     # make directory to contain JSON records
-    os.makedirs(folder, exist_ok = True)
+    try:
+        os.makedirs(folder) ## change to fit Python 2.7
+    except:
+        pass
     
     get_user_record(screen_name, depth, folder)
     
